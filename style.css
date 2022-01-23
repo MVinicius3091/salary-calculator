@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+body {
+  position: relative;
+  background-color: wheat;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+input {
+  border: none;
+  border-bottom: solid red;
+  width: 200px;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  background-color: transparent;
+  color: #000;
+}
+
+input:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+input:focus {
+  outline: 0;
+}
+.container label,
+input {
+  display: flex;
+  margin-top: 10px;
+}
+header h1 {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+.active {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  left: 15%;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+
+button {
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 3px 10px;
+  background-color: rgba(255, 0, 0, 0.5);
+  font-size: 1rem;
+  border-radius: 40px;
+  border: solid red;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+main {
+  position: relative;
+}
+
+main .box_salario {
+  border: solid 5px black;
+  border-top: none;
+  border-right: none;
+  padding: 30px;
+  width: 420px;
+  display: inline-block;
+}
+
+main .box_extras {
+  border: solid 5px black;
+  border-bottom: none;
+  padding: 30px 30px;
+  width: 420px;
+}
+
+main .nova_consulta {
+  position: absolute;
+  left: 45%;
+  bottom: -30px;
+  padding: 5px 20px;
+}
+
+.result {
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 90px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: #000;
+  border: solid black;
+}
+
+.extra {
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 90px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: #000;
+  border: solid black;
+}
+
+.total {
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 90px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: #000;
+  border: solid black;
+}
+
+body .fundo {
+  background-image: url(./imagens/fundo.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  margin-top: 10px;
+  width: 90%;
+  height: 95vh;
+  top: 40px;
+  left: 60px;
+}
+
+@media screen and (max-width: 750px) {
+  body .fundo {
+    width: 90%;
+    height: 760px;
+    left: 25px;
+    top: 80px;
+  }
+
+  .container {
+    display: block;
+    padding: 0;
+    height: 740px;
+    margin-top: 30px;
+  }
+
+  main .box_extras {
+    border: solid 5px black;
+    border-bottom: none;
+    border: none;
+    padding: 0;
+  }
+
+  main .box_salario {
+    border: solid 5px black;
+    border-top: none;
+    border-right: none;
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+  }
+  main .nova_consulta {
+    position: relative;
+    margin: 0 0 30px 0;
+  }
+
+  main .nova_consulta {
+    left: 25%;
+    bottom: -30px;
+    padding: 5px 20px;
+  }
+}

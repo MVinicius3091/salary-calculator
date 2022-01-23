@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="fundo"></div>
+    <header>
+      <h1>Calcule suas horas trabalhadas!</h1>
+    </header>
+
+    <main>
+      <div class="container active">
+        <div class="box_salario">
+          <label for="">Digite o seu salário:</label>
+          <input type="number" name="salario" id="salario" maxlength="7" />
+
+          <label for="">Digite as horas trabalhadas por mês:</label>
+          <input type="number" name="horas" id="horas" maxlength="5" />
+
+          <button class="salario">Consultar</button>
+          <label for="">Seu ganho diário é de:</label>
+          <div class="result"></div>
+        </div>
+
+        <div class="box_extras">
+          <label for="">Quantas horas extras você fez?</label>
+          <input type="number" lang="7" name="extra" id="horas_extras" />
+          <button class="consulta">Consultar</button>
+          <label for="">O valor das horas extras são de: </label>
+          <div class="extra"></div>
+
+          <label for="">Valor total:</label>
+          <div class="total"></div>
+        </div>
+        <button class="nova_consulta">Nova consulta</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
